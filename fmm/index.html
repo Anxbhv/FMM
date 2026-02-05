@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For My Moushli 💜</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Background music -->
+    <audio id="bg-music" loop>
+      <source
+        src="https://cdn.pixabay.com/audio/2023/03/25/audio_7ff2b25593.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+  </head>
+  <body class="dark-theme">
+    <canvas id="glitter"></canvas>
+
+    <div class="container fade-in">
+      <h1 class="main-title">Hey Moushli 💜</h1>
+      <p class="subtitle">I have something really important to ask you...</p>
+
+      <h2 class="question">
+        Will you be my Valentine for the rest of my life? 💍
+      </h2>
+
+      <div class="buttons">
+        <button class="yes-btn" onclick="sayYes()">YES 💖</button>
+        <button class="no-btn" onmouseover="runAway(this)" onclick="sayNo()">
+          NO 😭
+        </button>
+      </div>
+
+      <h2 class="gallery-title">💜 Some of Our Beautiful Moments 💜</h2>
+
+      <div class="photo-gallery">
+        <img src="photo1.jpg" class="gallery-photo" />
+        <img src="photo2.jpg" class="gallery-photo" />
+        <img src="photo3.jpg" class="gallery-photo" />
+        <img src="photo4.jpg" class="gallery-photo" />
+        <img src="photo5.jpg" class="gallery-photo" />
+        <img src="photo6.jpg" class="gallery-photo" />
+      </div>
+
+      <a href="memories.html" class="memories-link">💜 Our Memories 💜</a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="effects.js"></script>
+  </body>
+</html>

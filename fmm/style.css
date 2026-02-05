@@ -1,0 +1,185 @@
+/* Global */
+
+body.dark-theme {
+  background: #0c0014;
+  color: #fff;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container,
+.memory-container,
+.yes-screen {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Titles */
+
+.main-title {
+  font-size: 3rem;
+  text-shadow: 0 0 20px #ff00d4;
+}
+
+.question {
+  margin-top: 30px;
+  font-size: 1.9rem;
+}
+
+/* Buttons */
+
+.buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.yes-btn {
+  padding: 15px 35px;
+  font-size: 1.6rem;
+  background: #ff00d4;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 25px #ff00d4;
+  transition: 0.3s;
+}
+
+.yes-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 45px #ff00ff;
+}
+
+.no-btn {
+  padding: 15px 35px;
+  font-size: 1.6rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Memories Link */
+
+.memories-link {
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 1.4rem;
+  color: #ff87ff;
+  text-decoration: none;
+  text-shadow: 0 0 12px #ff00ff;
+}
+
+.memories-link:hover {
+  color: white;
+}
+
+/* Memory Page */
+
+.memory-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px #ff00ff;
+}
+
+.memory-card {
+  background: rgba(255, 0, 255, 0.08);
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 20px #ff00ff55;
+  transition: 0.4s;
+}
+
+.memory-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px #ff00ff;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  color: #ff87ff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+/* YES Page */
+
+.couple-photo {
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: 0 0 35px #ff00ff;
+}
+
+.yes-title {
+  font-size: 3rem;
+  margin-top: 20px;
+  text-shadow: 0 0 30px #ff00ff;
+}
+
+.love-text {
+  margin-top: 30px;
+  font-size: 2rem;
+  text-shadow: 0 0 25px #ff00ff;
+}
+
+/* Glitter */
+
+canvas#glitter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.gallery-title {
+  margin-top: 50px;
+  font-size: 2rem;
+  text-shadow: 0 0 15px #ff00ff;
+}
+
+.photo-gallery {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.gallery-photo {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ff00ff55;
+  transition: 0.35s;
+}
+
+.gallery-photo:hover {
+  transform: scale(1.1) rotate(1deg);
+  box-shadow: 0 0 35px #ff00ff;
+}
